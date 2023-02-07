@@ -1,0 +1,12 @@
+/*Mobile First*/
+
+.Navbar{
+    display: flex;
+    color: black;
+    justify-content: space-between;
+}
+
+.Links{
+    display: flex;
+    margin-left: 2rem;
+}
