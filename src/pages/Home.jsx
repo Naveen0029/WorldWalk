@@ -1,25 +1,20 @@
 import React from "react";
-import {
-  Card,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
-} from "reactstrap";
 import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="Contaienr">
+    <div className="Container">
       <div className="row">
         <div className="col-12 col-sm-6">
+        
           <img
             alt="Sample"
             src="https://static.toiimg.com/photo/86797680.cms"
             width="100%"
             height="400px"
+            className="AustraliaImg"
           />
+          <label className="Australia">Australia</label>
         </div>
         <div className="col-12 col-sm-6">
           <img
@@ -27,7 +22,9 @@ const Home = () => {
             src="https://media.istockphoto.com/id/1178852373/photo/canadian-flag-flying-over-old-quebec-city.jpg?b=1&s=170667a&w=0&k=20&c=83crVlfiIrVw2LpAeyaNCh8ZMRbCiHWLYi50jpQv4dM="
             width="100%"
             height="400px"
+            className="AustraliaImg"
           />
+          <label className="Australia">Australia</label>
         </div>
       </div>
       <div className="row">

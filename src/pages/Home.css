@@ -1,3 +1,15 @@
 .row{
     margin: 1px;
 }
+
+.AustraliaImg{
+    position:relative;
+}
+
+.Australia{
+    position: absolute;
+    top:35vh;
+    left:45vh;
+    font-size:12vh;
+    color: white;
+}
