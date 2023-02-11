@@ -1,12 +1,24 @@
 /*Mobile First*/
 
-.Navbar{
-    display: flex;
-    color: black;
-    justify-content: space-between;
+.Header{
+    font-size: larger;
 }
-
+.webName{
+    display: flex;
+    justify-content: flex-start;
+}
 .Links{
     display: flex;
-    margin-left: 2rem;
+    justify-content: space-between;
 }
+a{
+    font-size: 1.5rem;
+}
+/* 
+.Image{
+    background-image: url('../img/Worldwalk.jpeg');
+} */
+.Logo{
+    height: 7rem;
+}
+

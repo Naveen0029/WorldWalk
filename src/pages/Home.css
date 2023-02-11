@@ -1,3 +1,26 @@
 .row{
     margin: 1px;
 }
+
+.ImgContainer{
+    position:relative;
+}
+
+.ImageLabel{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    font-size: 5rem;
+    color: white;
+    width: 260px;
+    height: 100px;
+    z-index: 10;
+}
+
+img:hover{
+    opacity: 0.8;
+}
+

@@ -1,23 +1,61 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import "./Navbar.css";
+import Navstyle from "./HorizontalNavbar";
+import VerticalNavbar from "./VerticalNavbar";
+import { FaBars } from 'react-icons/fa';
+import logo from '../img/worldwalk.png';
 
-const Navbar = () => {
+const NavbarComponent = () => {
+  const [navToggler,setNaveToggler] = useState(false);
+  const [navStyle,setnavStyle] = useState(false);
+  const [verticalNav,setverticalNav] = useState(false);
+  const [toggleButton,settoggleButton] = useState(false);//button will be visible or not
+
+ 
+  const actualWidth = ()=>{
+    //setWidth(window.innerWidth);
+    window.innerWidth>=1134?settoggleButton(false):settoggleButton(true);
+   // window.innerWidth>=1134?verticalNav(false):null;
+  }
+  
+  let showVerticalNav = () =>{
+    setverticalNav(!verticalNav);
+  }
+  useEffect(()=>{
+    window.addEventListener("resize",actualWidth);
+    return ()=>{
+      window.removeEventListener("resize",actualWidth)
+    }
+  });
+
+  useEffect(()=>{
+    actualWidth();
+  },[])
+
+  useEffect(()=>{
+    console.log('i am here');
+    setverticalNav(false);
+  },[toggleButton])
+
   return (
     <>
-      <div className="Cotainer">
+      <div className="container-fluid Header">
         <div className="row">
-          <div className="col-12 col-sm-6">
-            <h1>WorldWalk</h1>
+          <div className="col-8 col-sm-4 align-self-center webName">
+          <div className="Image"></div>
+          <img src={logo}
+            className="Logo" />
           </div>
-          <div className="col-12 col-sm-6">
-            <div className="row">
-              <div className="col-sm-6">
-                <p>Home</p>
-              </div>
-              <div className="col-sm-6">
-                <p>AboutUs</p>
-              </div>
-            </div>
+
+          <div className='col-4 col-sm-8 Links align-self-center justify-content-end'>
+          
+          {toggleButton===false?<Navstyle />:<FaBars onClick={showVerticalNav} />}
+          
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-12">
+          {verticalNav&&<VerticalNavbar />}
           </div>
         </div>
       </div>
@@ -25,4 +63,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarComponent;
