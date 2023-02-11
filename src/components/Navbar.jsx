@@ -43,7 +43,7 @@ const NavbarComponent = () => {
         <div className="row">
           <div className="col-8 col-sm-4 align-self-center webName">
           <div className="Image"></div>
-          <img src={logo}
+          <img alt= "WorldWalk" src={logo}
             className="Logo" />
           </div>
 
