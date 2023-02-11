@@ -3,7 +3,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="Container">
+    <div className="container-fluid">
       <div className="row">
         <div className="col-12 col-sm-6 ImgContainer">
         

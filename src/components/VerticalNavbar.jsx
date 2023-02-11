@@ -35,6 +35,11 @@ const VerticalNavbar = () => {
         </DropdownMenu>
       </Dropdown>
       <NavItem>
+              <NavLink href="/" active>
+                Tours & Travels
+              </NavLink>
+      </NavItem>
+      <NavItem>
         <NavLink href="#">AboutUs</NavLink>
       </NavItem>
       <NavItem>

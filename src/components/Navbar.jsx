@@ -3,6 +3,7 @@ import "./Navbar.css";
 import Navstyle from "./HorizontalNavbar";
 import VerticalNavbar from "./VerticalNavbar";
 import { FaBars } from 'react-icons/fa';
+import logo from '../img/worldwalk.png';
 
 const NavbarComponent = () => {
   const [navToggler,setNaveToggler] = useState(false);
@@ -16,7 +17,7 @@ const NavbarComponent = () => {
     window.innerWidth>=1134?settoggleButton(false):settoggleButton(true);
    // window.innerWidth>=1134?verticalNav(false):null;
   }
-
+  
   let showVerticalNav = () =>{
     setverticalNav(!verticalNav);
   }
@@ -28,6 +29,10 @@ const NavbarComponent = () => {
   });
 
   useEffect(()=>{
+    actualWidth();
+  },[])
+
+  useEffect(()=>{
     console.log('i am here');
     setverticalNav(false);
   },[toggleButton])
@@ -37,7 +42,9 @@ const NavbarComponent = () => {
       <div className="container-fluid Header">
         <div className="row">
           <div className="col-8 col-sm-4 align-self-center webName">
-          <h1>WorldWalk</h1>
+          <div className="Image"></div>
+          <img src={logo}
+            className="Logo" />
           </div>
 
           <div className='col-4 col-sm-8 Links align-self-center justify-content-end'>

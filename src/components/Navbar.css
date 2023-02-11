@@ -2,7 +2,6 @@
 
 .Header{
     font-size: larger;
-    padding: 2rem;
 }
 .webName{
     display: flex;
@@ -15,3 +14,11 @@
 a{
     font-size: 1.5rem;
 }
+/* 
+.Image{
+    background-image: url('../img/Worldwalk.jpeg');
+} */
+.Logo{
+    height: 7rem;
+}
+

@@ -21,9 +21,10 @@ const Footer = () => {
           <h1>World Walk</h1>
           <h6>Immigration club and visa consultancy</h6>
           <br></br>
-          <p>Near Nehru Park</p>
-          <p>Baba Ranadhir Road</p>
-          <p>125111</p>
+          <p>First Floor Bhutani Mobile,</p>
+          <p>Uklana Road Bhuna</p>
+          <p>Pincode 125111</p>
+          <p>Fatehabad (Haryana)</p>
           <div className="number">
           <BsFillTelephoneFill style={{'fontSize': '24'}} />
           <p style={{'paddingLeft': '10px'}}>+91 7696692000</p>
@@ -47,6 +48,11 @@ const Footer = () => {
         <div className="div-2">
           <h5>Company</h5>
           <Nav vertical>
+            <NavItem>
+              <NavLink href="/" active>
+                Tours & Travels
+              </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink href="/" active>
                 About Us
