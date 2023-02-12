@@ -46,7 +46,7 @@ const VerticalNavbar = () => {
         <NavLink href="#">Our Services</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">
+        <NavLink href="/contact-us">
           Contact Us
         </NavLink>
       </NavItem>
