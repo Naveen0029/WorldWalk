@@ -23,22 +23,20 @@ const Navstyle = () => {
       </NavItem>
       <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
         <DropdownToggle nav caret>
-          Study Destinations
+          Immigration Club
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem >Australia</DropdownItem>
-          <DropdownItem >Canada</DropdownItem>
-          <DropdownItem>United Kingdom</DropdownItem>
+        <DropdownItem >Immigration</DropdownItem>
+          <DropdownItem >Dependent Visa</DropdownItem>
+          <DropdownItem>Study Visa</DropdownItem>
           <DropdownItem divider />
-          <DropdownItem>USA</DropdownItem>
-          <DropdownItem>Europe</DropdownItem>
+          <DropdownItem>Tourist Visa</DropdownItem>
+          <DropdownItem>Business Visa</DropdownItem>
+          <DropdownItem>Work Visa</DropdownItem>
+          <DropdownItem>Money Transfer</DropdownItem>
+          <DropdownItem>Tours & Travels</DropdownItem>
         </DropdownMenu>
       </Dropdown>
-      <NavItem>
-              <NavLink href="/" active>
-                Tours & Travels
-              </NavLink>
-      </NavItem>
       <NavItem>
         <NavLink href="#">AboutUs</NavLink>
       </NavItem>
