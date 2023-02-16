@@ -19,12 +19,7 @@ const Footer = () => {
         <Address />
         <div className="div-2">
           <h5>Company</h5>
-          <Nav vertical>
-            <NavItem>
-              <NavLink href="/" active>
-                Tours & Travels
-              </NavLink>
-            </NavItem>
+          <Nav vertical> 
             <NavItem>
               <NavLink href="/" active>
                 About Us
@@ -34,29 +29,38 @@ const Footer = () => {
               <NavLink href="#">Our Services</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Contact Us</NavLink>
+              <NavLink href="/contact-us">Contact Us</NavLink>
             </NavItem>
           </Nav>
         </div>
         <div className="div-3">
-          <h5>Study Destinations</h5>
+          <h5>Immigration Club</h5>
           <Nav vertical>
             <NavItem>
               <NavLink href="/" active>
-                Study in Australia
+                Immigration
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Study in Canada</NavLink>
+              <NavLink href="#">Dependent Visa</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Study in United Kingdom</NavLink>
+              <NavLink href="#">Study Visa</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Study in USA</NavLink>
+              <NavLink href="#">Tourist Visa</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Study in Europe</NavLink>
+              <NavLink href="#">Business Visa</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Work Visa</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Money Transfer</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Tours & Travels</NavLink>
             </NavItem>
           </Nav>
         </div>

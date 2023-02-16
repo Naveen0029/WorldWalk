@@ -1,8 +1,10 @@
 import React from "react";
 import "./Home.css";
+import ContactUs from "./ContactUs";
 
 const Home = () => {
   return (
+    <>
     <div className="container-fluid">
       <div className="row">
         <div className="col-12 col-sm-6 ImgContainer">
@@ -55,6 +57,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <ContactUs />
+    </>
   );
 };
 
