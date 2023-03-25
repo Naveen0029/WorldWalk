@@ -42,6 +42,9 @@ const ContactUs = () => {
   };
   return (
     <div className="input-form">
+      <div className="Caurosel">
+         <Caurosel />
+      </div>
       <div className="imageForm">
         {/* <div className="">
           {/* <img src={visa} className="visa" /> }

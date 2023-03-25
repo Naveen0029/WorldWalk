@@ -1,15 +1,17 @@
 
 .input-form{
-    
-    background-color: red;
+    display: flex;
     /* border: 2px solid black; */
 }
 
-
+.Caurosel{
+    flex-basis: 57.5%;
+}
 .imageForm{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: red;
 }
 
 .visa{
@@ -35,8 +37,6 @@ form{
 .NameTable,.EmailTable,.TypeTable{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-
 }
 
 .form-details{
@@ -98,7 +98,15 @@ label{
     }
 }
 
+@media screen and (max-width:1101px){
+    .input-form{
+        display: flex;
+        flex-direction: column;
+        height: 830px
+    }  
+    
+}
+
 @media screen and (max-width:620px){
-   
     
 }

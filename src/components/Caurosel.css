@@ -1,0 +1,33 @@
+.Caurosels{
+    /* display: flex; */
+    border: 2px solid black;
+    /* justify-content: space-between;
+    align-items: center; */
+    position: relative;
+}
+
+.leftButton{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 1;
+    padding: 10px;
+}
+
+.rightButton{
+    position: absolute;
+    right:0;
+    top:0;
+    z-index: 1;
+    padding: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.CauroselImage{
+    position: absolute;
+    width: 100%;
+    border: 2px solid green;
+}

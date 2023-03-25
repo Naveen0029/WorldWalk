@@ -20,9 +20,6 @@
     z-index: 10;
 }
 
-img:hover{
-    opacity: 0.8;
-}
 
 .country{
     height: 100px;
