@@ -24,4 +24,31 @@ img:hover{
     opacity: 0.8;
 }
 
+.country{
+    height: 100px;
+    width: 100px;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.home{
+    background-color: antiquewhite;
+}
+
+.cards{
+    background-color: white;
+    padding: 10px 50px;
+    margin: 10px;
+}
+
+@media screen and (max-width:667px){
+    .cards{
+        padding: 10px 100px;
+    }
+}
 

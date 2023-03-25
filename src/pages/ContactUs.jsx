@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Address from "../Reusablecomponents/Address";
 import "./ContactUs.css";
 import visa from "../img/visa.jpg";
+import Caurosel from "../components/Caurosel";
 
 const ContactUs = () => {
   const [FirstName, setFirstName] = useState("");
@@ -42,12 +43,12 @@ const ContactUs = () => {
   return (
     <div className="input-form">
       <div className="imageForm">
-        <div className="">
-          <img src={visa} className="visa" />
-        </div>
+        {/* <div className="">
+          {/* <img src={visa} className="visa" /> }
+        </div> */}
         <div className="know-details">
-          <h2 style={{'margin-bottom':'25px','color':'purple'}}>Let us know your contact details.</h2>
-          <form onSubmit={handleSubmit}>
+          <h2 style={{'margin-bottom':'25px','color':'white'}}>GET IN TOUCH</h2>
+          <form onSubmit={handleSubmit} >
             <div className="NameTable">
               <div className="FirstName">
                 <label>

@@ -1,63 +1,66 @@
 import React from "react";
 import "./Home.css";
 import ContactUs from "./ContactUs";
+import Canada from '../img/CANADA.jpg';
+import australia from '../img/australia.png';
+import unitedkingdom from '../img/unitedkingdom.png';
+import usa from '../img/usa.png';
+import europe from '../img/europe.png';
 
 const Home = () => {
   return (
     <>
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-12 col-sm-6 ImgContainer">
-        
-          <img
-            alt="Sample"
-            src="https://static.toiimg.com/photo/86797680.cms"
-            width="100%"
-            height="400px"
-          />
-          <label className="ImageLabel">Australia</label>
-        </div>
-        <div className="col-12 col-sm-6 ImgContainer">
-          <img
-            alt="Sample"
-            src="https://media.istockphoto.com/id/1178852373/photo/canadian-flag-flying-over-old-quebec-city.jpg?b=1&s=170667a&w=0&k=20&c=83crVlfiIrVw2LpAeyaNCh8ZMRbCiHWLYi50jpQv4dM="
-            width="100%"
-            height="400px"
-          />
-          <label className="ImageLabel">Canada</label>
-        </div>
+    <ContactUs />
+    <div className="container-fluid home">
+      <div className="cardContainer">
+      <div className="cards">
+        <div><img alt="Canada" src={Canada} className="country"/></div>
+        <div><h3>CANADA</h3></div>
+        <div><p>Student Visa & Admission</p></div>
+        <div><p>Work Visa</p></div>
+        <div><p>Business Visa</p></div>
+        <div><p>PR Visa - Express Entry</p></div>
+        <div><p>PR Visa - PNP</p></div>
       </div>
-      <div className="row">
-        <div className="col-12 col-sm-4 ImgContainer">
-          <img
-            alt="Sample"
-            src="https://media.istockphoto.com/id/904523520/photo/big-ben-clock-tower-and-london-bus.jpg?s=612x612&w=0&k=20&c=sy2eUc8tLiibOjT-Pg4Iw0oQtA_9gEUmNONxLtcyBuI="
-            width="100%"
-            height="400px"
-          />
-          <label className="ImageLabel">United Kingdom</label>
-        </div>
-        <div className="col-12 col-sm-4 ImgContainer">
-          <img
-            alt="Sample"
-            src="https://img.freepik.com/free-photo/usa-united-states-america-flag-flagpole-near-skyscrapers-cloudy-sky_181624-5054.jpg"
-            width="100%"
-            height="400px"
-          />
-          <label className="ImageLabel">USA</label>
-        </div>
-        <div className="col-12 col-sm-4 ImgContainer">
-          <img
-            alt="Sample"
-            src="https://images.pexels.com/photos/753337/pexels-photo-753337.jpeg?cs=srgb&dl=pexels-julius-silver-753337.jpg&fm=jpg"
-            width="100%"
-            height="400px"
-          />
-          <label className="ImageLabel">Europe</label>
-        </div>
+      <div className="cards">
+      <div><img alt="Australia" src={australia} className="country"/></div>
+        <div><h3>AUSTRALIA</h3></div>
+        <div><p>Student Visa & Admission</p></div>
+        <div><p>Work Visa</p></div>
+        <div><p>Business Visa</p></div>
+        <div><p>PR Visa - Express Entry</p></div>
+        <div><p>PR Visa - PNP</p></div>
+      </div>
+      <div className="cards">
+      <div><img alt="United Kingdom" src={unitedkingdom} className="country"/></div>
+        <div><h3>UNITED KINGDOM</h3></div>
+        <div><p>Student Visa & Admission</p></div>
+        <div><p>Work Visa</p></div>
+        <div><p>Business Visa</p></div>
+        <div><p>PR Visa - Express Entry</p></div>
+        <div><p>PR Visa - PNP</p></div>
+      </div>
+      <div className="cards">
+      <div><img alt="USA" src={usa} className="country"/></div>
+        <div><h3>USA</h3></div>
+        <div><p>Student Visa & Admission</p></div>
+        <div><p>Work Visa</p></div>
+        <div><p>Business Visa</p></div>
+        <div><p>PR Visa - Express Entry</p></div>
+        <div><p>PR Visa - PNP</p></div>
+      </div>
+      <div className="cards">
+      <div><img alt="Europe" src={europe} className="country"/></div>
+        <div><h3>EUROPE</h3></div>
+        <div><p>Student Visa & Admission</p></div>
+        <div><p>Work Visa</p></div>
+        <div><p>Business Visa</p></div>
+        <div><p>PR Visa - Express Entry</p></div>
+        <div><p>PR Visa - PNP</p></div>
+      </div>
       </div>
     </div>
-    <ContactUs />
+    
     </>
   );
 };
