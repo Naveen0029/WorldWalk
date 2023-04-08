@@ -9,7 +9,7 @@
 .leftButton{
     position: absolute;
     left:0;
-    top:0;
+    top:180px;
     z-index: 1;
     padding: 10px;
 }
@@ -17,7 +17,7 @@
 .rightButton{
     position: absolute;
     right:0;
-    top:0;
+    top:180px;
     z-index: 1;
     padding: 10px;
 }
@@ -30,4 +30,5 @@
     position: absolute;
     width: 100%;
     border: 2px solid green;
+    transition: 'display' 2s ease-in-out;
 }

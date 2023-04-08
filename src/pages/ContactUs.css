@@ -102,11 +102,17 @@ label{
     .input-form{
         display: flex;
         flex-direction: column;
-        height: 830px
     }  
-    
+    .Caurosel{
+        min-height: 420px;
+    }
 }
 
-@media screen and (max-width:620px){
+@media screen and (max-width:679px){
+    .NameTable,.EmailTable,.TypeTable{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     
 }
