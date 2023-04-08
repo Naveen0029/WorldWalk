@@ -12,7 +12,7 @@ let ImageDiv = [
             width="100%"
             height="415px"
           />
-          <label className="ImageLabel">Australia</label>
+          <label className="ImageLabel australia">Australia</label>
      </div>,
      <div>
      <img
