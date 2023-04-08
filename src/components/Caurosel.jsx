@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import './Caurosel.css'
+import { useEffect } from 'react';
 
 
 let ImageDiv = [
@@ -67,6 +68,15 @@ const Caurosel = () => {
         e.preventDefault();
         setCurrentDiv((currentDiv+1)%ImageDiv.length);
     }
+
+    useEffect(()=>{
+      const intervalId = setInterval(()=>{
+        setCurrentDiv((currentDiv+1)%ImageDiv.length);
+      },3000);
+
+      return () => clearInterval(intervalId);
+    },[currentDiv])
+
   return (
     <div className='Caurosels'>
         <div className='leftButton'>
@@ -74,7 +84,7 @@ const Caurosel = () => {
         </div>
         {
             ImageDiv.map((div,index)=>(
-                <div key={index} className={index === currentDiv ? 'CauroselImage' : 'hide' }>
+                <div key={index} className={index === currentDiv ? 'CauroselImage' : 'CauroselImage hide' }>
                     {div}
                 </div>
             ))
