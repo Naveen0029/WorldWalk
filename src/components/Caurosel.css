@@ -1,6 +1,6 @@
 .Caurosels{
     /* display: flex; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* justify-content: space-between;
     align-items: center; */
     position: relative;
@@ -29,6 +29,6 @@
 .CauroselImage{
     position: absolute;
     width: 100%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     transition: 'display' 2s ease-in-out;
 }

@@ -104,15 +104,21 @@ label{
         flex-direction: column;
     }  
     .Caurosel{
-        min-height: 420px;
+        min-height: 412px;
     }
 }
 
 @media screen and (max-width:679px){
     .NameTable,.EmailTable,.TypeTable{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .submit-button{
+        display: flex;
+        justify-content:center;
+        /* border: 2px solid black; */
     }
     
 }
