@@ -1,0 +1,24 @@
+.socialNavbar{
+    display: flex;
+    justify-content: center;
+    background-color: #01477f;
+    position: relative;
+    z-index: 1;
+}
+
+.Icons{
+    display: flex;
+}
+
+.Icons * {
+    margin: 10px;
+}
+
+.Icons>p{
+    margin-top: 20px;
+}
+
+.Icons :nth-child(2):hover,.Icons :nth-child(3):hover{
+    background-color: black
+}
+

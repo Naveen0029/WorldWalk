@@ -1,7 +1,16 @@
 /*Mobile First*/
 
+.fixed-top{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1000; 
+}
+
 .Header{
     font-size: larger;
+    background-color: white;
 }
 .webName{
     display: flex;

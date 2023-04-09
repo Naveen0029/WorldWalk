@@ -2,6 +2,7 @@ import React,{useEffect, useState} from "react";
 import "./Navbar.css";
 import Navstyle from "./HorizontalNavbar";
 import VerticalNavbar from "./VerticalNavbar";
+import SocialNavbar from "./SocialNavbar";
 import { FaBars } from 'react-icons/fa';
 import logo from '../img/worldwalk.png';
 
@@ -39,7 +40,8 @@ const NavbarComponent = () => {
 
   return (
     <>
-      <div className="container-fluid Header">
+      <SocialNavbar />
+      <div className="container-fluid Header fixed-top">
         <div className="row">
           <div className="col-8 col-sm-4 align-self-center webName">
           <div className="Image"></div>

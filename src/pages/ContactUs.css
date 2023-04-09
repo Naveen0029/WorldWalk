@@ -1,6 +1,7 @@
 
 .input-form{
     display: flex;
+    justify-content: center;
     /* border: 2px solid black; */
 }
 
@@ -104,7 +105,7 @@ label{
         flex-direction: column;
     }  
     .Caurosel{
-        min-height: 412px;
+        min-height: 420px;
     }
 }
 
