@@ -15,7 +15,7 @@ const Address = () => {
   return (
     <>
     <div className="Address div-1">
-          <h1>World Walk</h1>
+          <h1 style={{"textShadow":"2px 2px 5px red","color":"blue"}}>World Walk</h1>
           <h6>Immigration club and visa consultancy</h6>
           <br></br>
           <p>First Floor Bhutani Mobile,</p>

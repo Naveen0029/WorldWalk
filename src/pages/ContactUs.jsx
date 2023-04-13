@@ -3,14 +3,22 @@ import Address from "../Reusablecomponents/Address";
 import "./ContactUs.css";
 import visa from "../img/visa.jpg";
 import Caurosel from "../components/Caurosel";
+import { useDispatch, useSelector } from "react-redux";
+import { addDetails } from "../redux/action";
+import { useEffect } from "react";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactUs = () => {
   const [FirstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
   const [Mobile, setMobile] = useState("");
   const [Email, setEmail] = useState("");
-  const [visaType, setVisaType] = useState({ value: "Study" });
-  const [country, setCountry] = useState({ value: "Australia" });
+  const [VisaType, setVisaType] = useState("Immigration");
+  const [Country, setCountry] = useState("Australia");
+  let statusMessage = useSelector((state)=>state.addFormData);
+
+  let dispatch = useDispatch();
 
   let handleFirstName = (e) => {
     setFirstName(e.target.value);
@@ -38,8 +46,30 @@ const ContactUs = () => {
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    console.log(FirstName, LastName, Mobile, Email, visaType, country);
+    console.log(FirstName, LastName, Mobile, Email, VisaType, Country);
+    let data = {
+      FirstName,
+      LastName,
+      Mobile,
+      Email,
+      VisaType: VisaType,
+      Country: Country
+    }
+    setFirstName("");
+    setLastName("");
+    setMobile("");
+    setEmail("");
+
+    dispatch(addDetails(data));
   };
+
+  useEffect(()=>{
+    if(statusMessage.status === 200)toast(statusMessage.message);
+    else if(statusMessage.status === 500)toast.error(statusMessage.message)
+
+  },[useSelector((state)=>state.addFormData)])
+
+
   return (
     <div className="input-form">
       <div className="Caurosel">
@@ -107,7 +137,7 @@ const ContactUs = () => {
               <div className="">
                 <label>
                 <h4>Visa Type</h4>
-                  <select value={visaType} onChange={handleVisa}>
+                  <select value={VisaType} onChange={handleVisa}>
                     <option value="Immigration">Immigration</option>
                     <option value="Dependent">Dependent</option>
                     <option value="Study">Study</option>
@@ -121,7 +151,7 @@ const ContactUs = () => {
               <div className="">
                 <label>
                   <h4>Country</h4>
-                  <select value={country} onChange={handleCountry}>
+                  <select value={Country} onChange={handleCountry}>
                     <option value="Australia">Australia</option>
                     <option value="Canada">Canada</option>
                     <option value="United Kingdom">United Kingdom</option>

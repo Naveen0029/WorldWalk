@@ -1,0 +1,3 @@
+export const FORM_DETAILS = "FORM_DETAILS";
+export const ADDFORMDATA = "ADDFORMDATA";
+export const POST_FAILURE = 'POST_FAILURE';
