@@ -4,7 +4,6 @@ const initialData = {
     message: 'Success'
 }
 export const addFormData = (state = initialData, action) => {
-    console.log('this is action',action.data);
     switch(action.type){
         case ADDFORMDATA:
             return {

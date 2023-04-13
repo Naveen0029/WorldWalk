@@ -80,7 +80,7 @@ const Caurosel = () => {
   return (
     <div className='Caurosels'>
         <div className='leftButton'>
-        <FontAwesomeIcon icon={faAngleLeft} onClick={leftButton} style={{'font-size':'50px',color: 'white'}}/>
+        <FontAwesomeIcon icon={faAngleLeft} onClick={leftButton} style={{'fontSize':'50px',color: 'white'}}/>
         </div>
         {
             ImageDiv.map((div,index)=>(
@@ -90,7 +90,7 @@ const Caurosel = () => {
             ))
         }
         <div className='rightButton'>
-        <FontAwesomeIcon icon={faAngleRight} onClick={rightButton} style={{'font-size':'50px',color: 'white'}}/>
+        <FontAwesomeIcon icon={faAngleRight} onClick={rightButton} style={{'fontSize':'50px',color: 'white'}}/>
         </div>
     </div>
   )

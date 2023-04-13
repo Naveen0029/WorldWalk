@@ -34,7 +34,6 @@ const NavbarComponent = () => {
   },[])
 
   useEffect(()=>{
-    console.log('i am here');
     setverticalNav(false);
   },[toggleButton])
 

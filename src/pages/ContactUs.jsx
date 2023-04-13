@@ -46,7 +46,6 @@ const ContactUs = () => {
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    console.log(FirstName, LastName, Mobile, Email, VisaType, Country);
     let data = {
       FirstName,
       LastName,
@@ -80,7 +79,7 @@ const ContactUs = () => {
           {/* <img src={visa} className="visa" /> }
         </div> */}
         <div className="know-details">
-          <h2 style={{'margin-bottom':'25px','color':'white'}}>GET IN TOUCH</h2>
+          <h2 style={{'marginBottom':'25px','color':'white'}}>GET IN TOUCH</h2>
           <form onSubmit={handleSubmit} >
             <div className="NameTable">
               <div className="FirstName">
