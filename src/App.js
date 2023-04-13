@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Home from './pages/Home';
-import ContactUs from './pages/ContactUs';
+import ContactsUs from './pages/ContactsUs';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/contact-us' element={<ContactUs />} />
+        <Route path='/contact-us' element={<ContactsUs />} />
       </Routes>
       </BrowserRouter>
       <Footer />
