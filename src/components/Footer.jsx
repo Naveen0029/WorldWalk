@@ -70,6 +70,11 @@ const Footer = () => {
           <p>9:30am-5:30pm</p>
         </div>
       </div>
+      <div className="whatsApp">
+           <a href='https://wa.me/7696692000' target="_blank">
+            <img src="https://static.joonsite.com/careerbrick/whatsapp.png" alt="Send Whatsapp Message" />
+           </a>
+        </div>
     </div>
   );
 };

@@ -19,6 +19,19 @@
     margin-top: 40px;
 }
 
+.whatsApp{
+    position: fixed;
+    left: 4px;
+    bottom: 6px;
+    z-index: 1000;
+}
+
+.whatsApp a img{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+
 
 /* @media screen and (max-width:874px){
     .Footer{

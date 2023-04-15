@@ -9,7 +9,7 @@
 }
 
 .Header{
-    font-size: larger;
+    font-size: 25px;
     background-color: white;
 }
 .webName{
@@ -29,8 +29,15 @@ a{
 } */
 .Logo{
     height: 7rem;
+    margin-left: -25px;
 }
 
+/* .Phone a{
+    text-decoration: none;
+}
+.Phone{
+    border: 2px solid red;
+} */
 @media screen and (max-width:416px){
     .Logo{
         width: 16rem;

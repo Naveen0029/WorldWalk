@@ -42,8 +42,7 @@ const NavbarComponent = () => {
       <SocialNavbar />
       <div className="container-fluid Header fixed-top">
         <div className="row">
-          <div className="col-8 col-sm-4 align-self-center webName">
-          <div className="Image"></div>
+          <div className="col-8 col-sm-4 webName">
           <img alt= "WorldWalk" src={logo}
             className="Logo" />
           </div>
