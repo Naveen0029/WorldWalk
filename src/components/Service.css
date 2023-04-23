@@ -1,0 +1,14 @@
+.Service{
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.Servicecards{
+    background-color: linear-gradient(#F3F2FF,#EDECF3);
+    padding: 10px 50px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: large;
+    color: black;
+}

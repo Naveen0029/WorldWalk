@@ -41,7 +41,7 @@ const Navstyle = () => {
         <NavLink href="#">AboutUs</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Our Services</NavLink>
+        <NavLink href="/services">Our Services</NavLink>
       </NavItem>
       <NavItem>
         <NavLink href="/contact-us">

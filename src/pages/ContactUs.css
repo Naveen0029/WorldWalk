@@ -72,6 +72,11 @@ select{
 
 .input-submit-button{
     width:8rem;
+    background-color: white;
+}
+
+.input-submit-button:hover{
+    background-color: antiquewhite;
 }
 
 label{

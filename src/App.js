@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Home from './pages/Home';
 import ContactsUs from './pages/ContactsUs';
+import Europe from './pages/Europe';
+import Services from './pages/Services';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -17,6 +19,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact-us' element={<ContactsUs />} />
+        <Route path='/europe' element={<Europe />} />
+        <Route path='/Services' element={<Services />} />
       </Routes>
       </BrowserRouter>
       <Footer />
